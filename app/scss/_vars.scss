@@ -1,0 +1,34 @@
+$accent: #f5ab35;
+
+$grey10: #f8f8f8;
+$grey50: #b0b0b0;
+$grey70: #707070;
+$grey80: #808080;
+
+$greyText: #879095;
+
+$black: #282828;
+
+
+%bg-pseudo {
+  position: absolute;
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+$xl: 1440px;
+$lg: 1200px;
+$md: 992px;
+$sm: 768px;
+$xs: 480px;
+
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

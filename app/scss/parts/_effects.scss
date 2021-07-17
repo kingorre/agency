@@ -1,0 +1,53 @@
+.btn-effect {
+  text-transform: uppercase;
+  transition: box-shadow 0.4s, background-color 0.4s, color 0.4s, transform 0.4s;
+
+  &:focus {
+    box-shadow: 0 0 5px 0 $accent;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: $accent;
+    border-color: $accent;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.btn-arrow {
+  position: relative;
+  display: inline-block;
+  padding: 10px 46px 10px 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: color 0.4s, box-shadow 0.4s, background-color 0.4s, fill 0.4s;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    width: 13px;
+    height: 6px;
+    transform: translateY(-50%);
+  }
+
+  &:focus {
+    box-shadow: 0 0 5px 0 $black;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+
+    svg {
+      fill: #fff;
+    }
+  }
+
+  &:active {
+    transform: scale(0.97) translateY(2px);
+  }
+}
